@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yujia&#39;s Website</title>
+    <link>/</link>
+    <description>Recent content on Yujia&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Condition and Overall Quality of Buildings Registered in the ABS Program</title>
+      <link>/2020/09/19/security-condition-and-overall-quality-of-buildings-registered-in-the-abs-program/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/19/security-condition-and-overall-quality-of-buildings-registered-in-the-abs-program/</guid>
+      <description>Abstract Nowadays most people care about the overall quality of a building and especially the security condition when looking for rental apartments. In this paper we explore the Apartment Building Evaluation dataset, which is from the Toronto Open Data Portal. We find that majority of the buildings are evaluated from various aspects and the security conditions are mostly good. Our findings have important implications for improving apartment environment and making choices when looking for rental buildings.</description>
+    </item>
+    
+    <item>
+      <title>Security Condition and Overall Quality of Buildings Registered in the ABS Program</title>
+      <link>/2020/09/19/security-condition-and-overall-quality-of-buildings-registered-in-the-abs-program/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/19/security-condition-and-overall-quality-of-buildings-registered-in-the-abs-program/</guid>
+      <description>Abstract Nowadays most people care about the overall quality of a building and especially the security condition when looking for rental apartments. In this paper we explore the Apartment Building Evaluation dataset, which is from the Toronto Open Data Portal. We find that majority of the buildings are evaluated from various aspects and the security conditions are mostly good. Our findings have important implications for improving apartment environment and making choices when looking for rental buildings.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+    </item>
+    
+  </channel>
+</rss>
