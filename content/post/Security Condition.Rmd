@@ -1,9 +1,13 @@
 ---
 title: "Security Condition and Overall Quality of Buildings Registered in the ABS Program"
 author: "Yujia Zheng"
-date: 2020-09-19
-categories: ["R"]
-tags: ["R Markdown", "Apartment Building Evaluation", "rental apartments", "security condition"]
+date: '2020-09-19'
+categories: R
+tags:
+- R Markdown
+- Apartment Building Evaluation
+- rental apartments
+- security condition
 ---
 
 ```{r setup, include=FALSE}
