@@ -17,6 +17,7 @@ library(visdat)
 #install.packages("skimr")
 library(skimr)
 ```
+# Author: Yujia Zheng
 
 # Abstract
 Nowadays most people care about the overall quality of a building and especially the security condition when looking for rental apartments. In this paper we explore the Apartment Building Evaluation dataset, which is from the Toronto Open Data Portal. We find that majority of the buildings are evaluated from various aspects and the security conditions are mostly good. Our findings have important implications for improving apartment environment and making choices when looking for rental buildings.
@@ -48,7 +49,7 @@ apartment_data <- apartment_resources %>%
 apartment_data
 ```
 
-# Data
+# Data & Discussion
 The apartment_data dataset consists of evaluation scores of buildings that are registered in the Apartment Building Standards (ABS) program. Evaluation were conducted in internal and external areas, including elevators, laundary rooms, security, parking area, etc. All areas are evaluated using scores from 1 to 5 in which 1 represents the worst condition and 5 is the best. A total score is calculated and used to suggest whether the building requires a full audit, or a evaluation in the future.
 
 ```{r echo=FALSE}
@@ -81,6 +82,7 @@ Here are summary statistics for the interested variables. SECURITY represents th
 
 NO_OF_AREAS_EVALUATED represents the number of areas evaluated for a building in a one-time evaluation. NO_OF_AREAS_EVALUATED has a min of 0 and a max of 20. The median is 18, and on average 17.2 areas are evaluated for registered buildings. The standard deviation of NO_OF_AREAS_EVALUATED is 2.209606. 
 
+# Graphs & Discussion
 ```{r echo=FALSE}
 # Plot the interesting variables.
 apartment_data2 %>%
@@ -97,20 +99,24 @@ apartment_data1 %>%
        caption = "Source: Toronto Open Data Portal (https://open.toronto.ca/)")
 ```
 
-In the graph of the distribution of security score for buildings, we find that the distribution of security score is heavily left skewed. The distribution of the number of evaluated areas is also left skewed, with majority of the datapoints located between 15 to 19.
-The findings are consistent with the summary statistics of SECURITY and NO_OF_AREAS_EVALUATED. 
-
-# Discussion
 The barplots of the distribution of scores of security and number of evaluated areas show important features of our interested variables SECURITY and NO_OF_AREAS_EVALUATED. 
-Firstly, the plot for security score is heavily left skewed, which is quite consistent with the summary statistics in Data section.  The variable SECURITY has a median of 4, a 25th percentile of 4 and a 75th percentile of 5, this together with the graph suggests most of the datapoints take a value of 4 or 5. In our context of study, this tells us that most of the evaluated buildings have a pretty good security condition.
+
+Firstly, we find that the distribution for security score is heavily left skewed, which is quite consistent with the summary statistics in Data section.  The variable SECURITY has a median of 4, a 25th percentile of 4 and a 75th percentile of 5, this together with the graph suggests most of the datapoints take a value of 4 or 5. In our context of study, this tells us that most of the evaluated buildings have a pretty good security condition.
+
 The plot of the number of evaluated areas is also left skewed, with majority of the datapoints located between 15 to 19. In our context of study, this suggests majority of the buildings are evaluated thoroughly from lots of different areas.
+The findings are consistent with the summary statistics of SECURITY and NO_OF_AREAS_EVALUATED in the Data & Discussion section. 
 
 # Weaknesses and Next Steps
-Regarding to the weaknesses, our analysis and the conclusion might not be accurate because of the missing values in the dataset. There are a number of NAs or N/As (missing values) in our interested variable SECURITY. If the data of these NAs can be collected in the future, and if they take some extreme value such as 1 (the worst condition), this would strongly impact the result of our previous analysis. In that case we might not conclude that most of the evaluated buildings have a pretty good security condition.
+Regarding to the weaknesses, our analysis and the conclusion might not be accurate because of the missing values in the dataset. Firstly, during the collection and creation of this apartment_data dataset, missing values are filled in as "NA" or "N/A". This actually creates some trouble for finding missing values, since R can only detect "NA", and therefore we have to find "N/A" manually.
+
+There are a number of NAs or N/As (missing values) in our interested variable SECURITY. If the data of these NAs can be collected in the future, and if they take some extreme value such as 1 (the worst condition), this would strongly impact the result of our previous analysis. In that case we might not conclude that most of the evaluated buildings have a pretty good security condition.
+
 And this issue of missing values actually exists in many variables in this dataset, such as BALCONY_GUARDS, which has more than a thousand of NAs or N/As. This causes huge impact while analysing variables.
 
 In the future, the next steps that we could take are: 
+
 - Firstly the dataset needs to be more complete and thorough. The evaluation can be done again to gather these missing values.
+
 - After the data are recollected, a new analysis should be done using the more complete data, and thus we can get a more accurate result about the buildings. The result of the analysis will have more reference value for people who are looking for rental apartments, and can help with the enforcement of standards and improvements of living environment for Toronto residents.
 
 # References

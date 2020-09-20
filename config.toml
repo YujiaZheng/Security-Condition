@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Yujia's Website"
+title = "Yujia Zheng's Website"
 theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
@@ -20,7 +20,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://twitter.com/rstudio"
 
 [params]
-    description = "Yujia's website built through Hugo and blogdown."
+    description = "Yujia Zheng's website built through Hugo and blogdown."
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
